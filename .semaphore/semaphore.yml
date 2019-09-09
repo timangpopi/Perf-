@@ -1,0 +1,52 @@
+version: v1.0
+name: Compile
+agent:
+  machine:
+    type: e1-standard-4
+    os_image: ubuntu1804
+blocks:
+  - name: "Build"
+    task:
+      jobs:
+      - name: Compile
+        commands:
+          - checkout
+          - install-package bc build-essential binutils zip curl libstdc++6 xz-utils wget
+          - wget https://raw.githubusercontent.com/timangpopi/semaphore/master/older
+          - bash older
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+ 
+
+
